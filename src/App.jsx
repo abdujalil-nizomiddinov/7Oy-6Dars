@@ -11,7 +11,7 @@ import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import SingleProduct from "./pages/SingleProduct";
 import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import Signup from ".//pages/Signup.jsx"; 
 import { ProtectedRoutes } from "./components/ProtectedRoutes";
 
 export const Contex = createContext();
