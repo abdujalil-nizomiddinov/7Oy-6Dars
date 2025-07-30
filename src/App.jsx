@@ -4,17 +4,17 @@ import {
   Navigate,
   RouterProvider,
 } from "react-router-dom";
-import { useState, useEffect, createContext } from "react";
+import { useState, useEffect } from "react";
 import MainLayout from "./layout/MainLayout";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
 import SingleProduct from "./pages/SingleProduct";
 import Login from "./pages/Login";
-import Signup from ".//pages/Signup.jsx"; 
+import Signup from ".//pages/Signup.jsx";
 import { ProtectedRoutes } from "./components/ProtectedRoutes";
 
-export const Contex = createContext();
+// export const Contex = createContext();
 
 function App() {
   const [user, setUser] = useState(false);
@@ -40,7 +40,7 @@ function App() {
     sessionStorage.setItem("loggedIn", "true");
     setUser(true);
   };
-   useEffect(() => {
+  useEffect(() => {
     console.log("app:", user);
   }, [user]);
 
